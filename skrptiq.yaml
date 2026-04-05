@@ -1,0 +1,40 @@
+# --- Identity ---
+id: "489ddd5d-8bf3-41ce-8fb8-792d47b2d7a5"
+name: "batch-competitor-analysis"
+display_name: "Batch Competitor Analysis"
+description: "Analyse a list of competitors individually, then consolidate into a comparative matrix and strategic recommendations"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/batch-competitor-analysis"
+
+# --- Discovery (Hub) ---
+category: "product-manager"
+tags:
+  - "competitive-analysis"
+  - "market-research"
+  - "strategy"
+  - "loops"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "llm-service"
+  permissions: []
+  data_handling:
+    - "competitor-information"
+
+# --- Contents ---
+contents:
+  skills: 3
+  prompts: 3
+  workflows: 1
+  services: 1
+  assets: 1
+  total: 9
