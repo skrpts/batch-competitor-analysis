@@ -11,12 +11,6 @@ connections:
     type: uses
   - target: strategic-recommendation
     type: uses
-  - target: profile-competitor
-    type: uses
-  - target: consolidate-analysis
-    type: uses
-  - target: recommend-strategy
-    type: uses
   - target: llm-service
     type: runs_on
   - target: competitor-profile-template
