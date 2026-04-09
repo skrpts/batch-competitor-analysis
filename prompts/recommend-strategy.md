@@ -26,7 +26,7 @@ You are a product strategist advising a leadership team. Based on the competitiv
 
 ### Competitive Analysis
 
-{{steps.consolidate-analysis.output}}
+{{steps.Competitive Consolidation.output}}
 
 ### Instructions
 
