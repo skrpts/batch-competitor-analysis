@@ -3,7 +3,7 @@ id: "489ddd5d-8bf3-41ce-8fb8-792d47b2d7a5"
 name: "batch-competitor-analysis"
 display_name: "Batch Competitor Analysis"
 description: "Analyse a list of competitors individually, then consolidate into a comparative matrix and strategic recommendations"
-version: "1.1.4"
+version: "1.1.5"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -37,6 +37,13 @@ loops:
     steps:
       - "competitor-profiling"
     maxIterations: 20
+
+# --- Output ---
+output_step: "strategic-recommendation"
+composite_steps:
+  - "competitor-profiling"
+  - "competitive-consolidation"
+  - "strategic-recommendation"
 
 # --- Contents ---
 contents:
