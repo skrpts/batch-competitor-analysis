@@ -4,6 +4,13 @@ id: consolidate-analysis
 title: Consolidate Analysis
 description: "Combines individual competitor profiles into a comparative matrix and landscape analysis"
 tags: [Production, Competitive, Synthesis]
+inputs:
+  your_product:
+    label: "Your Product"
+    description: "Your product name and brief description"
+    example: "Skrptiq — AI workflow builder for structured content production"
+    required: true
+    type: text
 connections:
   - target: competitive-consolidation
     type: derived_from

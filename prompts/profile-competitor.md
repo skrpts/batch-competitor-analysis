@@ -4,6 +4,19 @@ id: profile-competitor
 title: Profile Competitor
 description: "Produces a structured competitive profile for a single competitor"
 tags: [Production, Competitive, Research]
+inputs:
+  your_product:
+    label: "Your Product"
+    description: "Your product name and brief description"
+    example: "Skrptiq — AI workflow builder for structured content production"
+    required: true
+    type: text
+  analysis_focus:
+    label: "Analysis Focus"
+    description: "What aspects to focus the analysis on"
+    example: "Focus on pricing models, enterprise features, and developer experience"
+    required: true
+    type: text
 connections:
   - target: competitor-profiling
     type: derived_from

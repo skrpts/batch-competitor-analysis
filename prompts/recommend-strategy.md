@@ -4,6 +4,13 @@ id: recommend-strategy
 title: Recommend Strategy
 description: "Produces prioritised competitive strategy recommendations from the comparative analysis"
 tags: [Production, Competitive, Strategy]
+inputs:
+  your_product:
+    label: "Your Product"
+    description: "Your product name and brief description"
+    example: "Skrptiq — AI workflow builder for structured content production"
+    required: true
+    type: text
 connections:
   - target: strategic-recommendation
     type: derived_from
