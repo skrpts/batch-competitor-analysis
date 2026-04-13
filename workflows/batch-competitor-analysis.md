@@ -24,10 +24,8 @@ execution:
     step_type: "generation"
   - skill: "competitive-consolidation"
     step_type: "synthesis"
-    input_from: "competitor-profiling"
   - skill: "strategic-recommendation"
     step_type: "synthesis"
-    input_from: "competitive-consolidation"
 ---
 
 ## Overview
