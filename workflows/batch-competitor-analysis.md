@@ -19,6 +19,17 @@ metadata:
   estimated_duration: "5-20 minutes"
   trigger: manual
   loop_modes: ["for_each"]
+loops:
+  - id: "competitor-analysis"
+    mode: "for_each"
+    steps:
+      - "competitor-profiling"
+    maxIterations: 20
+output_step: "strategic-recommendation"
+composite_steps:
+  - "competitor-profiling"
+  - "competitive-consolidation"
+  - "strategic-recommendation"
 execution:
   - skill: "competitor-profiling"
     step_type: "generation"
