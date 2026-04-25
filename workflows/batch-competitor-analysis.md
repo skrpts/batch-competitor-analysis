@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: strategic-recommendation
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: competitor-profile-template
@@ -25,7 +27,7 @@ loops:
     steps:
       - "competitor-profiling"
     maxIterations: 20
-output_step: "strategic-recommendation"
+output_step: "language-polish"
 composite_steps:
   - "competitor-profiling"
   - "competitive-consolidation"
@@ -37,6 +39,8 @@ execution:
     step_type: "synthesis"
   - skill: "strategic-recommendation"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
