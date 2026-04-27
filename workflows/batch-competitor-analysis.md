@@ -34,12 +34,16 @@ composite_steps:
   - "strategic-recommendation"
 execution:
   - skill: "competitor-profiling"
+    prompt: "profile-competitor"
     step_type: "generation"
   - skill: "competitive-consolidation"
+    prompt: "consolidate-analysis"
     step_type: "synthesis"
   - skill: "strategic-recommendation"
+    prompt: "recommend-strategy"
     step_type: "synthesis"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
