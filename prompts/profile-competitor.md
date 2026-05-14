@@ -5,6 +5,12 @@ title: Profile Competitor
 description: "Produces a structured competitive profile for a single competitor"
 tags: [Production, Competitive, Research]
 inputs:
+  competitors:
+    label: "Competitors"
+    description: "JSON array of competitor names to analyse, e.g. [\"Notion AI\", \"Jasper\", \"Copy.ai\"]"
+    example: '["Notion AI", "Jasper", "Copy.ai", "Writer"]'
+    required: true
+    type: longtext
   your_product:
     label: "Your Product"
     description: "Your product name and brief description"

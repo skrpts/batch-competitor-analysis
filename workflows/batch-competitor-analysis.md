@@ -24,6 +24,7 @@ metadata:
 loops:
   - id: "competitor-analysis"
     mode: "for_each"
+    inputExpression: "{{input.competitors}}"
     steps:
       - "competitor-profiling"
     maxIterations: 20
