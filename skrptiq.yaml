@@ -1,9 +1,9 @@
 # --- Identity ---
-id: "489ddd5d-8bf3-41ce-8fb8-792d47b2d7a5"
+id: "a67b75b6-5d8c-4075-87ee-1f63d9a5db23"
 name: "batch-competitor-analysis"
 display_name: "Batch Competitor Analysis"
 description: "Analyse a list of competitors individually, then consolidate into a comparative matrix and strategic recommendations"
-version: "1.1.23"
+version: "1.1.24"
 engine: ">=0.1.0"
 
 # --- Attribution ---
