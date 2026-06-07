@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.23
+GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 6 inline shared-content files and declare 6 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Internal slug references rewritten for E2 rename/mirror-drop pair(s): recommend-strategy→recommend-competitive-strategy. Closes pre-Step-3 inline-vendoring for this bundle.
+
 ## v1.1.22
 Wave 2: re-signed with canonical engine signing pipeline.
 

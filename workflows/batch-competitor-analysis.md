@@ -41,7 +41,7 @@ execution:
     prompt: "consolidate-analysis"
     step_type: "synthesis"
   - skill: "strategic-recommendation"
-    prompt: "recommend-strategy"
+    prompt: "recommend-competitive-strategy"
     step_type: "synthesis"
   - skill: "language-polish"
     prompt: "polish-language"
