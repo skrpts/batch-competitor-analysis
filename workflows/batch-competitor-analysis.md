@@ -37,15 +37,19 @@ execution:
   - skill: "competitor-profiling"
     prompt: "profile-competitor"
     step_type: "generation"
+    output: { name: "competitor_profile", type: "text" }
   - skill: "competitive-consolidation"
     prompt: "consolidate-analysis"
     step_type: "synthesis"
+    output: { name: "comparison_matrix", type: "text" }
   - skill: "strategic-recommendation"
     prompt: "recommend-competitive-strategy"
     step_type: "synthesis"
+    output: { name: "recommendations", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_analysis", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
