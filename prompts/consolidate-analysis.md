@@ -56,7 +56,7 @@ Add rows for any dimensions that are particularly relevant given the analysis fo
 
 **2. Landscape Analysis**
 
-Synthesise patterns visible only when viewing all competitors together:
+Synthesize patterns visible only when viewing all competitors together:
 
 - **Market clusters:** Are competitors grouped around specific approaches or segments?
 - **Pricing trends:** Is the market converging on a pricing model? Where are the outliers?

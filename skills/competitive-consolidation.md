@@ -11,12 +11,12 @@ connections:
 
 ## Capability
 
-Takes an array of individual competitor analyses and produces a side-by-side comparison matrix with landscape-level insights. Identifies patterns that are only visible when viewing all competitors together — market clusters, pricing trends, common gaps, and positioning white space.
+Takes an array of individual competitor analyzes and produces a side-by-side comparison matrix with landscape-level insights. Identifies patterns that are only visible when viewing all competitors together — market clusters, pricing trends, common gaps, and positioning white space.
 
 ## When to Use
 
 - As the post-loop consolidation step after a for_each competitor analysis
-- When individual analyses need to be cross-referenced and compared
+- When individual analyzes need to be cross-referenced and compared
 - When you need to move from "what each competitor does" to "what the landscape looks like"
 
 ## Inputs

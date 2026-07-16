@@ -2,7 +2,7 @@
 type: workflow
 id: batch-competitor-analysis
 title: Batch Competitor Analysis
-description: "Analyse a list of competitors individually, then consolidate into a comparative matrix and strategic recommendations"
+description: "Analyze a list of competitors individually, then consolidate into a comparative matrix and strategic recommendations"
 tags: [Production, Customer-Facing, Competitive, Planning, Loop]
 connections:
   - target: competitor-profiling
@@ -57,7 +57,7 @@ execution:
 
 ## Overview
 
-This workflow demonstrates the **for_each** loop pattern. Given a list of competitors, it analyses each one individually against consistent criteria, then consolidates all analyses into a comparative matrix with strategic recommendations.
+This workflow demonstrates the **for_each** loop pattern. Given a list of competitors, it analyzes each one individually against consistent criteria, then consolidates all analyzes into a comparative matrix with strategic recommendations.
 
 The loop ensures every competitor receives the same depth of analysis. The post-loop consolidation step receives the full results array and produces the comparative output — demonstrating the for_each → consolidate pattern.
 
@@ -77,7 +77,7 @@ Each iteration is independent — the analysis of Competitor B does not depend o
 
 ### Stage 2: Consolidation (post-loop)
 
-After all competitors have been analysed, the consolidation step receives the full results array via `{{loop.competitor-analysis.results}}`. It produces:
+After all competitors have been analyzed, the consolidation step receives the full results array via `{{loop.competitor-analysis.results}}`. It produces:
 
 - A side-by-side comparison matrix
 - Patterns across the competitive landscape
@@ -93,7 +93,7 @@ A final step reads the comparative matrix and produces actionable strategic reco
 |------|----------|-------------|---------|
 | `{{input.competitors}}` | Yes | List of competitor names (JSON array or one per line) | `["Notion", "Coda", "Slite"]` |
 | `{{input.your_product}}` | Yes | Your product name and brief description | "Skrptiq — AI workflow builder for structured content production" |
-| `{{input.analysis_focus}}` | No | Specific aspects to emphasise in the analysis | "Focus on AI capabilities, pricing for small teams, and enterprise readiness" |
+| `{{input.analysis_focus}}` | No | Specific aspects to emphasize in the analysis | "Focus on AI capabilities, pricing for small teams, and enterprise readiness" |
 
 ## Outputs
 
@@ -114,8 +114,8 @@ Before running this workflow:
 ## Provider Notes
 
 - Each competitor triggers one AI call. 5 competitors = 5 calls in the loop, plus 2 post-loop calls (consolidation + recommendations).
-- Individual analyses use temperature 0.3 for consistent, structured output.
-- The consolidation step is the most token-intensive — it receives all individual analyses and must cross-reference them.
+- Individual analyzes use temperature 0.3 for consistent, structured output.
+- The consolidation step is the most token-intensive — it receives all individual analyzes and must cross-reference them.
 
 ## Example Input
 

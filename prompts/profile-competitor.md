@@ -7,7 +7,7 @@ tags: [Production, Competitive, Research]
 inputs:
   competitors:
     label: "Competitors"
-    description: "JSON array of competitor names to analyse, e.g. [\"Notion AI\", \"Jasper\", \"Copy.ai\"]"
+    description: "JSON array of competitor names to analyze, e.g. [\"Notion AI\", \"Jasper\", \"Copy.ai\"]"
     example: '["Notion AI", "Jasper", "Copy.ai", "Writer"]'
     required: true
     type: longtext
@@ -37,7 +37,7 @@ Drives the competitor profiling skill. Runs once per competitor inside a for_eac
 
 ## Prompt
 
-You are a competitive intelligence analyst. Analyse the following competitor and produce a structured profile.
+You are a competitive intelligence analyst. Analyze the following competitor and produce a structured profile.
 
 ### Context
 
@@ -52,7 +52,7 @@ This is competitor {{loop.index}} of {{loop.total}} in this analysis batch.
 
 ### Instructions
 
-Research and analyse this competitor. Produce a structured profile covering every section below. Be specific — use concrete details, not vague generalisations.
+Research and analyze this competitor. Produce a structured profile covering every section below. Be specific — use concrete details, not vague generalisations.
 
 **1. Identity**
 
